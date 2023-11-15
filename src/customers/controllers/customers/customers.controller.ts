@@ -30,6 +30,6 @@ export class CustomersController {
     @Get('all')
     getAllCustomers(){
         const customers = this.customerService.getAllCustomers();
-        console.log(customers);
+        return customers;
     }
 }
